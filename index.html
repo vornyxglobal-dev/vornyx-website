@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vornyx Global | Work Abroad | UAE & Gulf Opportunities</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#F5A623;--gold2:#e8941a;--gold3:#d4830f;
+  --gold-pale:#FEF3C7;--gold-glow:rgba(245,166,35,0.15);
+  --navy:#0D1A3A;--navy2:#1B2B5E;--navy3:#243570;--navy4:#2e4080;
+  --cream:#FDFAF5;--offwhite:#F8F5EF;--white:#fff;
+  --green:#10B981;--amber:#F59E0B;
+  --text:#1a1a2e;--text-mid:#4a5568;--text-light:#718096;
+  --border:rgba(0,0,0,0.08);
+  --r:4px;--r2:8px;--r3:16px;
+  --shadow:0 4px 24px rgba(13,26,58,0.12);
+  --shadow-lg:0 12px 48px rgba(13,26,58,0.18);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;}
+
+/* ═══ NAVBAR ═══ */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  background:rgba(13,26,58,0.97);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(245,166,35,0.18);
+  height:68px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 6%;transition:all .3s;
+}
+.nav-logo{display:flex;align-items:center;gap:12px;cursor:pointer;text-decoration:none;}
+.nav-logo img{height:54px;width:auto;flex-shrink:0;}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1;}
+.nav-logo-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:700;
+  color:#ffffff;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+}
+.nav-logo-tag{
+  font-family:'DM Sans',sans-serif;
+  font-size:9.5px;font-weight:500;
+  color:var(--gold);
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-top:3px;
+}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{
+  color:rgba(255,255,255,0.75);text-decoration:none;font-size:12.5px;
+  font-weight:500;letter-spacing:.9px;text-transform:uppercase;
+  transition:color .25s;cursor:pointer;background:none;border:none;padding:0;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold),var(--gold2)) !important;
+  color:var(--navy) !important;padding:9px 20px !important;
+  border-radius:var(--r);font-weight:700 !important;
+}
+.nav-cta:hover{opacity:.9;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;}
+
+/* ═══ PAGE SYSTEM ═══ */
+.page{display:none;padding-top:68px;}
+.page.active{display:block;}
+
+/* ═══ SHARED ═══ */
+.section{padding:80px 6%;}
+.section-alt{background:var(--offwhite);}
+.section-dark{background:var(--navy);color:var(--white);}
+.section-navy2{background:var(--navy2);color:var(--white);}
+
+.section-tag{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--gold);margin-bottom:14px;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,52px);
+  font-weight:600;line-height:1.15;margin-bottom:16px;
+}
+.section-sub{
+  font-size:16px;color:var(--text-mid);line-height:1.7;
+  max-width:580px;
+}
+.section-header{text-align:center;margin-bottom:60px;}
+.section-header .section-sub{margin:0 auto;}
+
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  text-decoration:none;cursor:pointer;border:none;
+  font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;
+  letter-spacing:.3px;border-radius:var(--r);padding:13px 26px;
+  transition:all .25s;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,166,35,0.4);}
+.btn-outline-gold{background:transparent;border:2px solid var(--gold);color:var(--gold);}
+.btn-outline-gold:hover{background:var(--gold);color:var(--navy);}
+.btn-outline-white{background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;}
+.btn-outline-white:hover{border-color:#fff;background:rgba(255,255,255,0.08);}
+.btn-lg{padding:16px 32px;font-size:15px;}
+
+.gold-line{
+  width:52px;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+  border-radius:2px;margin-bottom:20px;
+}
+.gold-line.center{margin:0 auto 20px;}
+
+/* ═══ HERO ═══ */
+#hero{
+  min-height:100vh;position:relative;overflow:hidden;
+  display:flex;align-items:center;
+  background:var(--navy);
+}
+#hero::before{
+  content:'';position:absolute;inset:0;
+  background:url('img/bg_4fe797ae.jpg') center/cover no-repeat;
+  opacity:.25;
+}
+#hero::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(13,26,58,.92) 0%,rgba(27,43,94,.82) 50%,rgba(13,26,58,.7) 100%);
+}
+.hero-inner{
+  position:relative;z-index:2;
+  max-width:1200px;margin:0 auto;padding:100px 6% 80px;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+  width:100%;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(245,166,35,0.15);border:1px solid rgba(245,166,35,0.3);
+  color:var(--gold);padding:7px 14px;border-radius:50px;
+  font-size:11.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  margin-bottom:24px;
+}
+.hero-badge span.dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(40px,5.5vw,70px);font-weight:700;
+  color:#fff;line-height:1.08;margin-bottom:22px;letter-spacing:-.5px;
+}
+.hero-title em{font-style:italic;color:var(--gold);}
+.hero-sub{
+  font-size:17px;color:rgba(255,255,255,0.72);line-height:1.7;
+  margin-bottom:36px;max-width:480px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;}
+.hero-stats{display:flex;gap:32px;}
+.hero-stat{text-align:left;}
+.hero-stat-n{
+  font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;
+  color:var(--gold);line-height:1;
+}
+.hero-stat-l{font-size:11.5px;color:rgba(255,255,255,0.55);letter-spacing:.5px;margin-top:3px;}
+.hero-card-col{display:flex;flex-direction:column;gap:16px;}
+.hero-card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(245,166,35,0.2);
+  border-radius:var(--r2);padding:20px 22px;
+  backdrop-filter:blur(10px);
+}
+.hero-card.urgent{
+  border-color:var(--gold);
+  background:rgba(245,166,35,0.1);
+}
+.hc-tag{
+  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:6px;
+}
+.hc-tag .badge-urgent{
+  background:var(--gold);color:var(--navy);padding:2px 7px;border-radius:3px;
+  font-size:9px;
+}
+.hc-title{font-size:16px;font-weight:600;color:#fff;margin-bottom:4px;}
+.hc-detail{font-size:13px;color:rgba(255,255,255,0.6);}
+.hc-footer{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);
+}
+.hc-salary{font-size:14px;font-weight:700;color:var(--gold);}
+.hc-cta{
+  font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;
+  color:var(--gold);text-decoration:none;cursor:pointer;
+}
+
+/* ═══ TICKER ═══ */
+.ticker{
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+  padding:12px 0;overflow:hidden;
+}
+.ticker-track{
+  display:flex;gap:0;animation:ticker 35s linear infinite;
+  white-space:nowrap;
+}
+.ticker-item{
+  padding:0 40px;font-size:12px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);
+  flex-shrink:0;display:flex;align-items:center;gap:16px;
+}
+.ticker-item::after{content:'◆';font-size:8px;opacity:.5;}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ═══ WHY CHOOSE VORNYX ═══ */
+.why-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;
+  max-width:1200px;margin:0 auto;
+}
+.why-img-wrap{position:relative;}
+.why-img-wrap img{
+  width:100%;height:500px;object-fit:cover;border-radius:var(--r3);
+  display:block;
+}
+.why-img-accent{
+  position:absolute;bottom:-20px;right:-20px;
+  background:var(--gold);border-radius:var(--r2);padding:22px 26px;
+  font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;
+  color:var(--navy);line-height:1.2;
+}
+.why-img-accent span{display:block;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy2);margin-top:3px;}
+.why-points{display:flex;flex-direction:column;gap:22px;margin:32px 0;}
+.why-point{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:20px 22px;background:var(--white);
+  border-radius:var(--r2);border:1px solid var(--border);
+  transition:all .3s;
+}
+.why-point:hover{border-color:var(--gold);transform:translateX(4px);box-shadow:var(--shadow);}
+.why-icon{
+  width:44px;height:44px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  border-radius:var(--r);display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+}
+.why-point-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.why-point-text{font-size:13.5px;color:var(--text-mid);line-height:1.6;}
+
+/* ═══ HOW IT WORKS ═══ */
+.hiw-steps{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+  max-width:1200px;margin:0 auto;position:relative;
+}
+.hiw-steps::before{
+  content:'';position:absolute;top:42px;left:10%;right:10%;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+  opacity:.3;z-index:0;
+}
+.hiw-step{
+  text-align:center;padding:0 12px;position:relative;z-index:1;
+}
+.hiw-num{
+  width:56px;height:56px;border-radius:50%;margin:0 auto 20px;
+  background:linear-gradient(135deg,var(--navy2),var(--navy3));
+  border:3px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--gold);
+  position:relative;z-index:2;transition:all .3s;
+}
+.hiw-step:hover .hiw-num{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy);transform:scale(1.1);
+}
+.hiw-step-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+.hiw-step-text{font-size:12.5px;color:var(--text-mid);line-height:1.6;}
+.hiw-step-icon{font-size:24px;margin-bottom:12px;}
+
+/* ═══ DESTINATIONS ═══ */
+.dest-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:200px 200px 200px;
+  gap:16px;max-width:1200px;margin:0 auto;
+}
+.dest-tile{
+  position:relative;overflow:hidden;border-radius:var(--r2);cursor:pointer;
+}
+.dest-tile:first-child{grid-row:span 2;}
+.dest-tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.dest-tile:hover img{transform:scale(1.06);}
+.dest-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(13,26,58,.85) 0%,transparent 55%);
+  transition:background .3s;
+}
+.dest-tile:hover .dest-overlay{background:linear-gradient(to top,rgba(13,26,58,.92) 0%,rgba(13,26,58,.2) 100%);}
+.dest-info{
+  position:absolute;bottom:0;left:0;right:0;padding:20px 22px;
+}
+.dest-name{
+  font-family:'Cormorant Garamond',serif;font-weight:700;color:#fff;
+  font-size:22px;line-height:1.2;
+}
+.dest-tile:first-child .dest-name{font-size:32px;}
+.dest-tag{
+  display:inline-block;background:var(--gold);color:var(--navy);
+  font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  padding:3px 9px;border-radius:3px;margin-bottom:8px;
+}
+.dest-jobs{font-size:12px;color:rgba(255,255,255,.65);margin-top:5px;}
+
+/* ═══ JOBS ═══ */
+.jobs-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  max-width:1200px;margin:0 auto;
+}
+.job-card{
+  background:var(--white);border-radius:var(--r2);
+  border:1px solid var(--border);overflow:hidden;
+  transition:all .3s;
+}
+.job-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold);}
+.job-card.urgent{border-color:var(--gold);border-width:2px;}
+
+.jc-img{width:100%;height:160px;object-fit:cover;object-position:center top;display:block;}
+.jc-img-wrap{position:relative;overflow:hidden;height:160px;}
+.jc-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,26,58,0.2) 0%,rgba(13,26,58,0.7) 100%);}
+
+.jc-head{
+  padding:20px 20px 16px;
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+}
+.jc-flag{font-size:22px;margin-bottom:8px;}
+.jc-role{font-size:17px;font-weight:700;color:#fff;margin-bottom:3px;}
+.jc-loc{font-size:12.5px;color:rgba(255,255,255,.6);}
+.jc-urgent-tag{
+  display:inline-block;background:var(--gold);color:var(--navy);
+  font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  padding:3px 8px;border-radius:3px;margin-bottom:8px;
+}
+.jc-body{padding:18px 20px;}
+.jc-salary{
+  font-size:20px;font-weight:700;color:var(--gold);
+  font-family:'Cormorant Garamond',serif;margin-bottom:12px;
+}
+.jc-detail-row{
+  display:flex;gap:8px;align-items:flex-start;
+  font-size:12.5px;color:var(--text-mid);margin-bottom:7px;
+}
+.jc-detail-row::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0;}
+.jc-footer{
+  padding:14px 20px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.jc-deadline{font-size:11.5px;color:var(--amber);font-weight:600;}
+.jc-apply{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy);padding:7px 16px;border-radius:var(--r);
+  font-size:12px;font-weight:700;text-decoration:none;cursor:pointer;
+  transition:all .25s;
+}
+.jc-apply:hover{opacity:.88;}
+
+/* ═══ TRUST STRIP ═══ */
+.trust-strip{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  padding:60px 6%;
+}
+.trust-inner{max-width:1200px;margin:0 auto;text-align:center;}
+.trust-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:48px;
+}
+.trust-card{
+  padding:30px 22px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(245,166,35,.2);border-radius:var(--r2);
+  transition:all .3s;
+}
+.trust-card:hover{border-color:var(--gold);background:rgba(245,166,35,.06);}
+.trust-card-icon{font-size:36px;margin-bottom:14px;}
+.trust-card-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:8px;}
+.trust-card-text{font-size:13px;color:rgba(255,255,255,.6);line-height:1.6;}
+
+/* ═══ APPLY SECTION ═══ */
+.apply-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;
+  max-width:1200px;margin:0 auto;
+}
+.apply-steps{margin:28px 0;}
+.apply-step{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:16px 0;border-bottom:1px solid var(--border);
+}
+.apply-step:last-child{border-bottom:none;}
+.apply-step-n{
+  width:32px;height:32px;flex-shrink:0;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;color:var(--navy);
+}
+.apply-step-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.apply-step-text{font-size:13px;color:var(--text-mid);line-height:1.5;}
+.apply-channels{margin-top:28px;display:flex;flex-direction:column;gap:12px;}
+.channel-card{
+  display:flex;align-items:center;gap:14px;
+  padding:16px 18px;background:var(--white);
+  border:1px solid var(--border);border-radius:var(--r2);
+  text-decoration:none;transition:all .3s;
+}
+.channel-card:hover{border-color:var(--gold);box-shadow:var(--shadow);transform:translateX(4px);}
+.channel-icon{
+  width:42px;height:42px;border-radius:var(--r);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+}
+.ch-wa{background:#25D366;}
+.ch-email{background:var(--navy2);}
+.ch-form{background:linear-gradient(135deg,var(--gold),var(--gold2));}
+.channel-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+.channel-detail{font-size:12.5px;color:var(--text-mid);}
+.channel-arrow{margin-left:auto;color:var(--gold);font-size:18px;}
+
+/* Google Form embed */
+.form-embed-wrap{
+  background:var(--white);border-radius:var(--r3);
+  box-shadow:var(--shadow-lg);overflow:hidden;
+  border:2px solid var(--gold);
+}
+.form-embed-header{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  padding:20px 24px;
+  display:flex;align-items:center;gap:12px;
+}
+.form-embed-header-icon{font-size:24px;}
+.form-embed-header-title{font-size:16px;font-weight:700;color:#fff;}
+.form-embed-header-sub{font-size:12px;color:rgba(255,255,255,.6);}
+.form-embed-wrap iframe{display:block;width:100%;border:none;}
+
+/* ═══ DISCLAIMER ═══ */
+.disclaimer-bar{
+  background:var(--offwhite);border-top:3px solid var(--gold);
+  border-bottom:1px solid var(--border);
+  padding:20px 6%;
+}
+.disclaimer-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:flex-start;gap:14px;
+}
+.disclaimer-icon{font-size:22px;flex-shrink:0;margin-top:2px;}
+.disclaimer-text{font-size:13px;color:var(--text-mid);line-height:1.65;}
+.disclaimer-text strong{color:var(--navy);font-weight:700;}
+
+/* ═══ TESTIMONIALS ═══ */
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  max-width:1200px;margin:0 auto;
+}
+.testi-card{
+  background:var(--white);border-radius:var(--r2);
+  padding:28px 26px;border:1px solid var(--border);
+  transition:all .3s;
+}
+.testi-card:hover{box-shadow:var(--shadow-lg);border-color:var(--gold);}
+.testi-stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:14px;}
+.testi-text{
+  font-family:'Cormorant Garamond',serif;font-size:17px;
+  font-style:italic;color:var(--text);line-height:1.6;margin-bottom:18px;
+}
+.testi-author{display:flex;align-items:center;gap:12px;}
+.testi-avatar{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--navy2),var(--navy3));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--gold);
+  flex-shrink:0;
+}
+.testi-name{font-size:14px;font-weight:700;color:var(--navy);}
+.testi-role{font-size:12px;color:var(--text-light);}
+
+/* ═══ CTA SECTION ═══ */
+.cta-section{
+  position:relative;overflow:hidden;
+  background:var(--navy);
+  padding:100px 6%;text-align:center;
+}
+.cta-section::before{
+  content:'';position:absolute;inset:0;
+  background:url('img/bg_4fe797ae.jpg') center/cover;
+  opacity:.12;
+}
+.cta-inner{position:relative;z-index:2;max-width:680px;margin:0 auto;}
+.cta-title{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,58px);
+  font-weight:700;color:#fff;line-height:1.1;margin-bottom:18px;
+}
+.cta-title em{font-style:italic;color:var(--gold);}
+.cta-sub{font-size:17px;color:rgba(255,255,255,.7);margin-bottom:36px;line-height:1.6;}
+.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+
+/* ═══ FOOTER ═══ */
+footer{
+  background:var(--navy);border-top:1px solid rgba(245,166,35,.15);
+  padding:60px 6% 28px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;
+  max-width:1200px;margin:0 auto;margin-bottom:48px;
+}
+.footer-logo img{height:40px;margin-bottom:16px;}
+.footer-about{font-size:13px;color:rgba(255,255,255,.5);line-height:1.7;max-width:260px;}
+.footer-col-title{
+  font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:16px;
+}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-links li a{
+  font-size:13.5px;color:rgba(255,255,255,.55);text-decoration:none;
+  cursor:pointer;transition:color .25s;
+}
+.footer-links li a:hover{color:var(--gold);}
+.footer-contact-item{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:13px;color:rgba(255,255,255,.55);margin-bottom:10px;line-height:1.5;
+}
+.footer-contact-item span.fi{flex-shrink:0;font-size:15px;}
+.footer-bottom{
+  max-width:1200px;margin:0 auto;
+  padding-top:24px;border-top:1px solid rgba(255,255,255,.08);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);}
+.footer-disclaimer{
+  font-size:11px;color:rgba(255,255,255,.25);
+  max-width:1200px;margin:16px auto 0;
+  line-height:1.6;padding-top:16px;border-top:1px solid rgba(255,255,255,.05);
+}
+
+/* ═══ ABOUT PAGE ═══ */
+.about-hero{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  padding:80px 6%;text-align:center;
+}
+.about-hero .section-title{color:#fff;}
+.about-hero .section-sub{color:rgba(255,255,255,.7);margin:0 auto;}
+.vals-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+  max-width:1200px;margin:0 auto;
+}
+.val-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r2);
+  padding:32px 26px;text-align:center;transition:all .3s;
+}
+.val-card:hover{border-color:var(--gold);box-shadow:var(--shadow);transform:translateY(-4px);}
+.val-icon{font-size:40px;margin-bottom:16px;}
+.val-title{font-size:17px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.val-text{font-size:13.5px;color:var(--text-mid);line-height:1.65;}
+
+/* ═══ JOBS PAGE ═══ */
+.jobs-hero{
+  background:linear-gradient(135deg,var(--navy),var(--navy3));
+  padding:70px 6%;
+}
+.jobs-hero .section-title{color:#fff;}
+.jobs-hero .section-sub{color:rgba(255,255,255,.7);}
+.jobs-filter{
+  display:flex;gap:10px;flex-wrap:wrap;
+  max-width:1200px;margin:0 auto 40px;
+}
+.filter-btn{
+  padding:8px 20px;border-radius:50px;border:2px solid var(--border);
+  background:var(--white);font-size:13px;font-weight:600;cursor:pointer;
+  transition:all .25s;color:var(--text-mid);
+}
+.filter-btn:hover,.filter-btn.active{
+  border-color:var(--gold);color:var(--navy);background:var(--gold-pale);
+}
+.jobs-full-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+  max-width:1200px;margin:0 auto;
+}
+
+/* ═══ CONTACT PAGE ═══ */
+.contact-hero{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  padding:70px 6%;text-align:center;
+}
+.contact-hero .section-title{color:#fff;}
+.contact-cards{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+  max-width:1000px;margin:0 auto;
+}
+.contact-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r2);
+  padding:32px 26px;text-align:center;transition:all .3s;
+}
+.contact-card:hover{border-color:var(--gold);box-shadow:var(--shadow);}
+.cc-icon{font-size:36px;margin-bottom:14px;}
+.cc-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.cc-val{font-size:14px;color:var(--gold);font-weight:600;margin-bottom:6px;}
+.cc-sub{font-size:12.5px;color:var(--text-light);}
+
+/* ═══ MOBILE NAV ═══ */
+.mobile-menu{
+  display:none;position:fixed;top:68px;left:0;right:0;
+  background:rgba(13,26,58,.98);backdrop-filter:blur(16px);
+  padding:24px 6%;z-index:998;flex-direction:column;gap:4px;
+  border-bottom:1px solid rgba(245,166,35,.2);
+}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{
+  color:rgba(255,255,255,.8);text-decoration:none;font-size:15px;
+  font-weight:500;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);
+  cursor:pointer;
+}
+.mobile-menu a:last-child{border-bottom:none;}
+.mobile-menu a.active{color:var(--gold);}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:40px;}
+  .hero-card-col{display:none;}
+  .dest-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .dest-tile:first-child{grid-row:span 1;}
+  .hiw-steps{grid-template-columns:1fr 1fr;gap:28px;}
+  .hiw-steps::before{display:none;}
+  .trust-grid{grid-template-columns:1fr 1fr;}
+  .apply-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .jobs-full-grid,.jobs-grid{grid-template-columns:1fr 1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .why-img-wrap{display:none;}
+}
+
+@media(max-width:480px){
+  .nav-logo-name{font-size:16px;letter-spacing:1.5px;}
+  .nav-logo-tag{display:none;}
+  .nav-logo img{height:44px;}
+}
+
+@media(max-width:768px){
+  .workers-grid{grid-template-columns:1fr 1fr !important;}
+
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .section{padding:60px 5%;}
+  .hero-inner{padding:80px 5% 60px;}
+  .hero-stats{gap:20px;}
+  .hiw-steps{grid-template-columns:1fr;}
+  .trust-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .dest-grid{grid-template-columns:1fr;}
+  .jobs-full-grid,.jobs-grid,.contact-cards,.vals-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+  .why-grid{grid-template-columns:1fr;}
+  .why-img-wrap{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <div class="nav-logo" onclick="showPage('home')">
+    <img src="vornyx_global_logo_updated.png" alt="Vornyx Global">
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Vornyx Global</span>
+      <span class="nav-logo-tag">Tours &amp; Employment</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a onclick="showPage('home')" class="active" id="nav-home">Home</a>
+    <a onclick="showPage('about')" id="nav-about">About</a>
+    <a onclick="showPage('jobs')" id="nav-jobs">Jobs</a>
+    <a onclick="showPage('apply')" id="nav-apply">Apply</a>
+    <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+    <a onclick="showPage('apply')" class="nav-cta">Start Your Journey</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" id="ham">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mob-menu">
+  <a onclick="showPage('home');closeMenu()" class="active">Home</a>
+  <a onclick="showPage('about');closeMenu()">About</a>
+  <a onclick="showPage('jobs');closeMenu()">Jobs</a>
+  <a onclick="showPage('apply');closeMenu()">Apply</a>
+  <a onclick="showPage('contact');closeMenu()">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════
+     HOME PAGE
+══════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now Recruiting — UAE &amp; Gulf Region
+        </div>
+        <h1 class="hero-title">
+          Secure Jobs in the<br>
+          <em>UAE &amp; Gulf</em><br>
+          Countries
+        </h1>
+        <p class="hero-sub">
+          We connect skilled African workers with verified international employers across the UAE and Gulf region. Transparent process. Dedicated support. Step-by-step guidance.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold btn-lg" onclick="showPage('apply')">Apply for UAE Opportunities</a>
+          <a class="btn btn-outline-white" onclick="showPage('jobs')">View Open Roles</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-n">UAE</div>
+            <div class="hero-stat-l">Primary Destination</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-n">3+</div>
+            <div class="hero-stat-l">Gulf Countries</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-n">100%</div>
+            <div class="hero-stat-l">Transparent Process</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card-col">
+        <div style="border-radius:12px;overflow:hidden;margin-bottom:16px;position:relative;height:180px;">
+          <img src="img/hero_airport.jpg" alt="African worker at airport with passport" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,26,58,0.8) 0%,transparent 60%);"></div>
+          <div style="position:absolute;bottom:14px;left:16px;right:16px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">✈️ Your Journey Starts Here</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.85);">Join workers who've successfully relocated abroad</div>
+          </div>
+        </div>
+        <div class="hero-card urgent">
+          <div class="hc-tag"><span class="badge-urgent">URGENT</span> UAE — Hiring Now</div>
+          <div class="hc-title">Housekeeping / Cleaning Staff</div>
+          <div class="hc-detail">Dubai, United Arab Emirates</div>
+          <div class="hc-footer">
+            <span class="hc-salary">AED 1,200–1,500 / mo</span>
+            <span class="hc-cta" onclick="showPage('apply')">Apply Now →</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hc-tag">Saudi Arabia — Open</div>
+          <div class="hc-title">Caregiver / Home Nurse</div>
+          <div class="hc-detail">Riyadh &amp; Jeddah</div>
+          <div class="hc-footer">
+            <span class="hc-salary">SAR 1,200–1,500 / mo</span>
+            <span class="hc-cta" onclick="showPage('apply')">Apply Now →</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hc-tag">Gulf Region — Multiple</div>
+          <div class="hc-title">House Manager</div>
+          <div class="hc-detail">Qatar, Oman, Saudi Arabia</div>
+          <div class="hc-footer">
+            <span class="hc-salary">KES 40,000–60,000 equiv.</span>
+            <span class="hc-cta" onclick="showPage('apply')">Apply Now →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track" id="ticker-t">
+      <div class="ticker-item">🇦🇪 UAE Opportunities Available Now</div>
+      <div class="ticker-item">🇸🇦 Saudi Arabia Caregivers</div>
+      <div class="ticker-item">🇶🇦 Qatar House Managers</div>
+      <div class="ticker-item">🇰🇼 Kuwait Opportunities</div>
+      <div class="ticker-item">✈️ Visa Facilitation Included</div>
+      <div class="ticker-item">📋 Transparent Process</div>
+      <div class="ticker-item">🌍 Interviews Every Wednesday</div>
+      <div class="ticker-item">🇦🇪 UAE Opportunities Available Now</div>
+      <div class="ticker-item">🇸🇦 Saudi Arabia Caregivers</div>
+      <div class="ticker-item">🇶🇦 Qatar House Managers</div>
+      <div class="ticker-item">🇰🇼 Kuwait Opportunities</div>
+      <div class="ticker-item">✈️ Visa Facilitation Included</div>
+      <div class="ticker-item">📋 Transparent Process</div>
+      <div class="ticker-item">🌍 Interviews Every Wednesday</div>
+    </div>
+  </div>
+
+  <!-- WHY CHOOSE VORNYX GLOBAL -->
+  <section class="section">
+    <div class="why-grid">
+      <div class="why-img-wrap">
+        <img src="img/why_caregiver.jpg" alt="African caregiver with elderly patient">
+        <div class="why-img-accent">
+          Trusted by Workers<br>Across Kenya
+          <span>Since 2025</span>
+        </div>
+      </div>
+      <div>
+        <div class="gold-line"></div>
+        <div class="section-tag">Why Choose Vornyx Global</div>
+        <h2 class="section-title">Your Trusted Partner<br>for Working Abroad</h2>
+        <p class="section-sub" style="margin-bottom:0;">We're not just a recruitment agency — we're your dedicated guide from application to your first day of work overseas.</p>
+        <div class="why-points">
+          <div class="why-point">
+            <div class="why-icon">✅</div>
+            <div>
+              <div class="why-point-title">Verified Job Opportunities</div>
+              <div class="why-point-text">Every job listing on our platform is vetted. We work only with legitimate, confirmed employers in the UAE and Gulf region — no fake offers, no surprises.</div>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-icon">🔍</div>
+            <div>
+              <div class="why-point-title">Transparent Process</div>
+              <div class="why-point-text">We tell you everything upfront — what's free, what you'll pay, how long it takes, and what to expect. No hidden fees. No confusion.</div>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-icon">🗺️</div>
+            <div>
+              <div class="why-point-title">Step-by-Step Guidance</div>
+              <div class="why-point-text">From document preparation to visa processing to your departure day, we walk alongside you at every stage of the journey.</div>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-icon">🤝</div>
+            <div>
+              <div class="why-point-title">Dedicated Support</div>
+              <div class="why-point-text">Your assigned recruitment officer is your personal contact throughout. WhatsApp, call, or visit us — we're always reachable.</div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-gold" onclick="showPage('apply')">Take the First Step Towards Working Abroad</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt">
+    <div class="section-header">
+      <div class="gold-line center"></div>
+      <div class="section-tag">How It Works</div>
+      <h2 class="section-title">From Application to<br>Your New Career</h2>
+      <p class="section-sub">A clear, structured 5-step process designed to get you working abroad with confidence.</p>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step">
+        <div class="hiw-step-icon">📝</div>
+        <div class="hiw-num">1</div>
+        <div class="hiw-step-title">Apply Online or via WhatsApp</div>
+        <div class="hiw-step-text">Submit your application through our Google Form, send a WhatsApp message, or email us your details to get started.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-step-icon">🔎</div>
+        <div class="hiw-num">2</div>
+        <div class="hiw-step-title">Application Review</div>
+        <div class="hiw-step-text">Our team reviews your profile within 48 hours. We'll contact you to verify your passport status and confirm basic eligibility.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-step-icon">🤝</div>
+        <div class="hiw-num">3</div>
+        <div class="hiw-step-title">Employer Shortlisting &amp; Interview</div>
+        <div class="hiw-step-text">We match your profile to suitable employers and schedule your interview — Caregiver interviews run every Wednesday.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-step-icon">📄</div>
+        <div class="hiw-num">4</div>
+        <div class="hiw-step-title">Processing &amp; Documentation</div>
+        <div class="hiw-step-text">We handle your CV polishing, medical referral, visa application, and all documentation. Visa facilitation is FREE for our placed workers.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-step-icon">✈️</div>
+        <div class="hiw-num">5</div>
+        <div class="hiw-step-title">Travel &amp; Job Placement</div>
+        <div class="hiw-step-text">We coordinate your travel, conduct a pre-departure orientation, and ensure you arrive ready. Your new life begins here.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a class="btn btn-gold btn-lg" onclick="showPage('apply')">Start Your Journey Today</a>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="section">
+    <div class="section-header">
+      <div class="gold-line center"></div>
+      <div class="section-tag">Destinations</div>
+      <h2 class="section-title">Where We Place Workers</h2>
+      <p class="section-sub">Primarily the UAE with strong opportunities across the wider Gulf region.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-tile">
+        <img src="img/dest_dubai.jpg" alt="Dubai UAE skyline">
+        <div class="dest-overlay"></div>
+        <div class="dest-info">
+          <div class="dest-tag">⭐ Primary Destination</div>
+          <div class="dest-name">🇦🇪 United Arab Emirates</div>
+          <div class="dest-jobs">Dubai · Abu Dhabi · Sharjah · Multiple roles available now</div>
+        </div>
+      </div>
+      <div class="dest-tile">
+        <img src="img/dest_riyadh.jpg" alt="Riyadh Saudi Arabia skyline">
+        <div class="dest-overlay"></div>
+        <div class="dest-info">
+          <div class="dest-name">🇸🇦 Saudi Arabia</div>
+          <div class="dest-jobs">Caregivers &amp; House Managers</div>
+        </div>
+      </div>
+      <div class="dest-tile">
+        <img src="https://images.unsplash.com/photo-1607619662634-3ac55ec0e216?w=600&auto=format&fit=crop&q=80" alt="Qatar">
+        <div class="dest-overlay"></div>
+        <div class="dest-info">
+          <div class="dest-name">🇶🇦 Qatar</div>
+          <div class="dest-jobs">House Managers</div>
+        </div>
+      </div>
+      <div class="dest-tile">
+        <img src="img/dest_muscat.jpg" alt="Muscat Oman city">
+        <div class="dest-overlay"></div>
+        <div class="dest-info">
+          <div class="dest-name">🇴🇲 Oman</div>
+          <div class="dest-jobs">House Managers</div>
+        </div>
+      </div>
+      <div class="dest-tile">
+        <img src="img/dest_kuwait.jpg" alt="Kuwait City towers">
+        <div class="dest-overlay"></div>
+        <div class="dest-info">
+          <div class="dest-name">🇰🇼 Kuwait</div>
+          <div class="dest-jobs">Caregivers &amp; House Managers</div>
+        </div>
+      </div>
+      <div class="dest-tile">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=80" alt="Bahrain">
+        <div class="dest-overlay"></div>
+        <div class="dest-info">
+          <div class="dest-name">🇧🇭 Bahrain</div>
+          <div class="dest-jobs">House Managers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <div class="gold-line center"></div>
+      <div class="section-tag" style="color:var(--gold);">Why Trust Vornyx Global</div>
+      <h2 class="section-title" style="color:#fff;">Built on Integrity &amp; Transparency</h2>
+      <p style="color:rgba(255,255,255,0.6);font-size:14px;margin-bottom:8px;letter-spacing:0.5px;">📍 Based in Nairobi, Kenya &nbsp;|&nbsp; 🌍 Serving clients across Africa</p>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-card-icon">✅</div>
+          <div class="trust-card-title">Verified Opportunities</div>
+          <div class="trust-card-text">Every role is confirmed with legitimate employers before we present it to any candidate.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">📋</div>
+          <div class="trust-card-title">Transparent Process</div>
+          <div class="trust-card-text">You know every fee, every step, and every timeline before you sign anything.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">🗺️</div>
+          <div class="trust-card-title">Step-by-Step Guidance</div>
+          <div class="trust-card-text">We hold your hand through documents, interviews, visas, and travel coordination.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">📞</div>
+          <div class="trust-card-title">Dedicated Support</div>
+          <div class="trust-card-text">One assigned officer handles your case from registration to departure.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED JOBS -->
+  <section class="section section-alt">
+    <div class="section-header">
+      <div class="gold-line center"></div>
+      <div class="section-tag">Current Openings</div>
+      <h2 class="section-title">Apply for Opportunities in the UAE</h2>
+      <p class="section-sub">Verified positions with confirmed employers across the UAE and Gulf region. New roles added regularly.</p>
+    </div>
+    <div class="jobs-grid">
+      <div class="job-card urgent">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/job_housekeeping_dubai.jpg" alt="Housekeeping staff Dubai">
+        </div>
+        <div class="jc-head">
+          <div class="jc-urgent-tag">🔥 Urgent — UAE</div>
+          <div class="jc-flag">🇦🇪</div>
+          <div class="jc-role">Housekeeping / Cleaning Staff</div>
+          <div class="jc-loc">Dubai, United Arab Emirates</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">AED 1,200 – 1,500/month</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">Sponsor visa provided</div>
+          <div class="jc-detail-row">Valid passport required</div>
+          <div class="jc-detail-row">Ages 22–45, female applicants</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">⚡ Limited slots</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/job_caregiver_patient.jpg" alt="African caregiver with patient">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇸🇦</div>
+          <div class="jc-role">Caregiver / Home Nurse</div>
+          <div class="jc-loc">Riyadh &amp; Jeddah, Saudi Arabia</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">SAR 1,200 – 1,500/month</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">Return ticket included</div>
+          <div class="jc-detail-row">2-year contract</div>
+          <div class="jc-detail-row">Interviews every Wednesday</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📅 Wed interviews</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/job_house_manager.jpg" alt="House manager hospitality worker">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇶🇦</div>
+          <div class="jc-role">House Manager</div>
+          <div class="jc-loc">Qatar, Oman &amp; Saudi Arabia</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">KES 40,000 – 60,000 equiv.</div>
+          <div class="jc-detail-row">Full household management role</div>
+          <div class="jc-detail-row">Accommodation provided</div>
+          <div class="jc-detail-row">2-year contract</div>
+          <div class="jc-detail-row">Experience preferred</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📋 Docs required</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a class="btn btn-outline-gold" onclick="showPage('jobs')">View All Open Positions →</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="section-header">
+      <div class="gold-line center"></div>
+      <div class="section-tag">Success Stories</div>
+      <h2 class="section-title">Workers We've Helped<br>Change Their Lives</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"Vornyx handled everything — my passport, medical, visa, and flight. I arrived in Dubai without any stress. I'm now earning three times what I made in Nairobi."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Amina K.</div>
+            <div class="testi-role">Housekeeper — Dubai, UAE</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"The process was completely transparent. I knew exactly what was happening every week. My recruitment officer was always available on WhatsApp."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">G</div>
+          <div>
+            <div class="testi-name">Grace M.</div>
+            <div class="testi-role">Caregiver — Riyadh, Saudi Arabia</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"I had tried other agencies before and was scammed. Vornyx was different from day one — honest, professional, and they delivered exactly what they promised."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">F</div>
+          <div>
+            <div class="testi-name">Faith W.</div>
+            <div class="testi-role">House Manager — Doha, Qatar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WORKERS SHOWCASE -->
+  <section class="section section-alt" style="padding:60px 6%;">
+    <div class="section-header" style="margin-bottom:36px;">
+      <div class="gold-line center"></div>
+      <div class="section-tag">Our Workers</div>
+      <h2 class="section-title">Skilled Professionals<br>Ready to Work Abroad</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto;">
+      <div style="border-radius:12px;overflow:hidden;height:260px;position:relative;box-shadow:0 4px 20px rgba(13,26,58,0.15);">
+        <img src="img/category_housekeeping.jpg" alt="Housekeeping professional" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 14px;background:linear-gradient(to top,rgba(13,26,58,0.9) 0%,transparent 100%);">
+          <div style="font-size:13px;font-weight:700;color:#fff;">Housekeeping</div>
+          <div style="font-size:11px;color:var(--gold);">UAE · Saudi Arabia</div>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;height:260px;position:relative;box-shadow:0 4px 20px rgba(13,26,58,0.15);">
+        <img src="img/category_caregiver.jpg" alt="Caregiver professional" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 14px;background:linear-gradient(to top,rgba(13,26,58,0.9) 0%,transparent 100%);">
+          <div style="font-size:13px;font-weight:700;color:#fff;">Caregiver</div>
+          <div style="font-size:11px;color:var(--gold);">Saudi Arabia · UAE</div>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;height:260px;position:relative;box-shadow:0 4px 20px rgba(13,26,58,0.15);">
+        <img src="img/category_house_manager.jpg" alt="House manager" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 14px;background:linear-gradient(to top,rgba(13,26,58,0.9) 0%,transparent 100%);">
+          <div style="font-size:13px;font-weight:700;color:#fff;">House Manager</div>
+          <div style="font-size:11px;color:var(--gold);">Qatar · Oman · Kuwait</div>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;height:260px;position:relative;box-shadow:0 4px 20px rgba(13,26,58,0.15);">
+        <img src="img/category_construction.jpg" alt="Construction worker" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 14px;background:linear-gradient(to top,rgba(13,26,58,0.9) 0%,transparent 100%);">
+          <div style="font-size:13px;font-weight:700;color:#fff;">Construction</div>
+          <div style="font-size:11px;color:var(--gold);">UAE · Gulf Region</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a class="btn btn-gold" onclick="showPage('apply')">Apply for These Roles</a>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title"><em>Start Your Journey</em> Towards Working Abroad Today</h2>
+      <p class="cta-sub">Take the first step towards working abroad with verified opportunities in the UAE and across the Gulf. Apply now — we'll guide you every step of the way.</p>
+      <div class="cta-actions">
+        <a class="btn btn-gold btn-lg" onclick="showPage('apply')">Start Your Journey Today</a>
+        <a class="btn btn-outline-white" href="https://wa.me/254700000000" target="_blank">WhatsApp Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER BAR -->
+  <div class="disclaimer-bar">
+    <div class="disclaimer-inner">
+      <span class="disclaimer-icon">ℹ️</span>
+      <p class="disclaimer-text"><strong>Important Notice:</strong> Vornyx Global is a recruitment facilitation agency connecting candidates with employers. We do not guarantee job placement but ensure a transparent and guided process. All applicants are advised to retain copies of all documents submitted. Licensed and operating in compliance with Kenyan labour facilitation guidelines.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo" style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <img src="vornyx_global_logo_updated.png" alt="Vornyx Global" style="height:48px;width:auto;">
+          <div style="line-height:1.2;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:#fff;letter-spacing:2px;text-transform:uppercase;">Vornyx Global</div>
+            <div style="font-size:9px;font-weight:500;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;margin-top:3px;">Tours &amp; Employment</div>
+          </div>
+        </div>
+        <p class="footer-about">Kenya's trusted overseas employment facilitation agency, connecting workers with verified opportunities in the UAE, Gulf region, and beyond.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('about')">About Us</a></li>
+          <li><a onclick="showPage('jobs')">Open Jobs</a></li>
+          <li><a onclick="showPage('apply')">Apply Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Destinations</div>
+        <ul class="footer-links">
+          <li><a>🇦🇪 UAE (Primary)</a></li>
+          <li><a>🇸🇦 Saudi Arabia</a></li>
+          <li><a>🇶🇦 Qatar</a></li>
+          <li><a>🇴🇲 Oman</a></li>
+          <li><a>🇰🇼 Kuwait</a></li>
+          <li><a>🇧🇭 Bahrain</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-contact-item"><span class="fi">📱</span> WhatsApp: +254 700 000 000</div>
+        <div class="footer-contact-item"><span class="fi">📧</span> info@vornyx.co.ke</div>
+        <div class="footer-contact-item"><span class="fi">📍</span> Nairobi, Kenya</div>
+        <div class="footer-contact-item"><span class="fi">🕐</span> Mon–Fri 8am–5pm</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vornyx Global. All rights reserved. | Tours & Travel | Overseas Employment Facilitation</p>
+      <p>Licensed Overseas Employment Agency · Kenya</p>
+    </div>
+    <p class="footer-disclaimer">Vornyx Global is a recruitment facilitation agency. We do not guarantee job placement but ensure a transparent and guided process. All placements are subject to employer approval and visa processing timelines. Workers are advised to review all contracts carefully before signing.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════
+     ABOUT PAGE
+══════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="about-hero">
+    <div class="gold-line center"></div>
+    <div class="section-tag">About Vornyx Global</div>
+    <h1 class="section-title">Connecting Africa to the World</h1>
+    <p class="section-sub" style="color:rgba(255,255,255,.7);max-width:560px;margin:0 auto;">A dual-service company combining Tours & Travel with Overseas Employment Facilitation — built on transparency, trust, and results.</p>
+  </div>
+
+  <section class="section">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:1100px;margin:0 auto;align-items:center;">
+      <div>
+        <div class="gold-line"></div>
+        <div class="section-tag">Our Mission</div>
+        <h2 class="section-title" style="font-size:36px;">To Open Doors for<br>Kenyan Workers</h2>
+        <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin-bottom:20px;">Vornyx Global was founded to solve a real problem: too many Kenyans are being misled, overcharged, or scammed by unscrupulous recruitment agents. We exist to be the opposite — honest, structured, and genuinely helpful.</p>
+        <p style="font-size:15px;color:var(--text-mid);line-height:1.8;">We focus on placing workers in verified positions in the UAE, Saudi Arabia, Qatar, Oman, and Kuwait, while building towards expansion into Australia, Germany, and the UK.</p>
+      </div>
+      <div>
+        <img src="img/about_hospitality.jpg" alt="Hotel hospitality workers" style="width:100%;border-radius:var(--r3);height:380px;object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-header">
+      <div class="gold-line center"></div>
+      <div class="section-tag">Core Values</div>
+      <h2 class="section-title">What We Stand For</h2>
+    </div>
+    <div class="vals-grid">
+      <div class="val-card">
+        <div class="val-icon">🔍</div>
+        <div class="val-title">Transparency</div>
+        <div class="val-text">Every fee, every step, every timeline is communicated clearly before you commit to anything.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🛡️</div>
+        <div class="val-title">Integrity</div>
+        <div class="val-text">We only present verified job opportunities. We never take shortcuts that could put our workers at risk.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🤝</div>
+        <div class="val-title">Service</div>
+        <div class="val-text">We assign each applicant a dedicated officer who stays with them from registration to departure.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════
+     JOBS PAGE
+══════════════════════════════════ -->
+<div class="page" id="page-jobs">
+  <div class="jobs-hero">
+    <div class="gold-line"></div>
+    <div class="section-tag">Current Openings</div>
+    <h1 class="section-title" style="color:#fff;">Open Job Opportunities</h1>
+    <p class="section-sub">Verified positions in the UAE and across the Gulf region. New roles added regularly.</p>
+  </div>
+
+  <section class="section">
+    <div class="jobs-filter">
+      <button class="filter-btn active" onclick="filterJobs('all',this)">All Positions</button>
+      <button class="filter-btn" onclick="filterJobs('uae',this)">🇦🇪 UAE</button>
+      <button class="filter-btn" onclick="filterJobs('saudi',this)">🇸🇦 Saudi Arabia</button>
+      <button class="filter-btn" onclick="filterJobs('qatar',this)">🇶🇦 Qatar</button>
+      <button class="filter-btn" onclick="filterJobs('kuwait',this)">🇰🇼 Kuwait</button>
+      <button class="filter-btn" onclick="filterJobs('urgent',this)">🔥 Urgent Only</button>
+    </div>
+    <div class="jobs-full-grid">
+      <div class="job-card urgent" data-country="uae" data-urgent="true">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_housekeeping_uae.jpg" alt="Housekeeping Dubai UAE">
+        </div>
+        <div class="jc-head">
+          <div class="jc-urgent-tag">🔥 Urgent — Hiring Now</div>
+          <div class="jc-flag">🇦🇪</div>
+          <div class="jc-role">Housekeeping / Cleaning Staff</div>
+          <div class="jc-loc">Dubai, United Arab Emirates</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">AED 1,200 – 1,500/month</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">Sponsor visa &amp; return ticket included</div>
+          <div class="jc-detail-row">Female applicants, ages 22–45</div>
+          <div class="jc-detail-row">Valid Kenyan passport required</div>
+          <div class="jc-detail-row">2-year contract</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">⚡ Limited positions</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card" data-country="saudi" data-urgent="false">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_caregiver_saudi.jpg" alt="Caregiver Saudi Arabia">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇸🇦</div>
+          <div class="jc-role">Caregiver / Home Nurse</div>
+          <div class="jc-loc">Riyadh, Saudi Arabia</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">SAR 1,200 – 1,500/month</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">Visa facilitation FREE</div>
+          <div class="jc-detail-row">Interviews every Wednesday</div>
+          <div class="jc-detail-row">2-year contract, return ticket</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📅 Wed interviews</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card" data-country="saudi" data-urgent="false">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_house_manager_saudi.jpg" alt="House Manager">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇸🇦</div>
+          <div class="jc-role">House Manager</div>
+          <div class="jc-loc">Jeddah, Saudi Arabia</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">SAR 1,500 – 1,800/month</div>
+          <div class="jc-detail-row">Full household management</div>
+          <div class="jc-detail-row">Experience preferred</div>
+          <div class="jc-detail-row">Bio data form required</div>
+          <div class="jc-detail-row">Accommodation included</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📋 Docs required</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card" data-country="qatar" data-urgent="false">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_house_manager_qatar.jpg" alt="House Manager Qatar">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇶🇦</div>
+          <div class="jc-role">House Manager</div>
+          <div class="jc-loc">Doha, Qatar</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">QAR 1,400 – 1,700/month</div>
+          <div class="jc-detail-row">Private family household</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">Previous Gulf experience preferred</div>
+          <div class="jc-detail-row">2-year contract</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📋 Open now</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card" data-country="uae" data-urgent="false">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_caregiver_abu_dhabi.jpg" alt="Caregiver Abu Dhabi UAE">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇦🇪</div>
+          <div class="jc-role">Caregiver / Nanny</div>
+          <div class="jc-loc">Abu Dhabi, UAE</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">AED 1,300 – 1,600/month</div>
+          <div class="jc-detail-row">Childcare &amp; eldercare roles</div>
+          <div class="jc-detail-row">Sponsor visa provided</div>
+          <div class="jc-detail-row">Accommodation included</div>
+          <div class="jc-detail-row">Basic English required</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📅 Ongoing intake</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card" data-country="saudi" data-urgent="false">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_house_manager_oman.jpg" alt="House Manager Oman">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇴🇲</div>
+          <div class="jc-role">House Manager</div>
+          <div class="jc-loc">Muscat, Oman</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">OMR 250 – 350/month</div>
+          <div class="jc-detail-row">Full household management</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">2-year contract</div>
+          <div class="jc-detail-row">Bio data form required</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📋 Docs required</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+      <div class="job-card" data-country="kuwait" data-urgent="false">
+        <div class="jc-img-wrap">
+          <img class="jc-img" src="img/jobs_worker_kuwait.jpg" alt="Worker Kuwait">
+        </div>
+        <div class="jc-head">
+          <div class="jc-flag">🇰🇼</div>
+          <div class="jc-role">Caregiver / Housekeeper</div>
+          <div class="jc-loc">Kuwait City, Kuwait</div>
+        </div>
+        <div class="jc-body">
+          <div class="jc-salary">KWD 120 – 160/month</div>
+          <div class="jc-detail-row">Accommodation &amp; meals provided</div>
+          <div class="jc-detail-row">Visa facilitation FREE</div>
+          <div class="jc-detail-row">2-year contract</div>
+          <div class="jc-detail-row">Return ticket included</div>
+        </div>
+        <div class="jc-footer">
+          <span class="jc-deadline">📅 Open now</span>
+          <span class="jc-apply" onclick="showPage('apply')">Apply Now</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════
+     APPLY PAGE
+══════════════════════════════════ -->
+<div class="page" id="page-apply">
+  <div style="background:linear-gradient(135deg,var(--navy),var(--navy2));padding:80px 6%;text-align:center;">
+    <div class="gold-line center"></div>
+    <div class="section-tag">Apply Now</div>
+    <h1 class="section-title" style="color:#fff;">Take the First Step Towards<br>Working Abroad</h1>
+    <p class="section-sub" style="color:rgba(255,255,255,.7);margin:0 auto;">Applications take less than 5 minutes. Choose the option that works best for you below.</p>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer-bar">
+    <div class="disclaimer-inner">
+      <span class="disclaimer-icon">ℹ️</span>
+      <p class="disclaimer-text"><strong>Important Notice:</strong> Vornyx Global is a recruitment facilitation agency connecting candidates with employers. We do not guarantee job placement but ensure a transparent and guided process. All services are provided in compliance with Kenyan labour regulations.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="apply-grid">
+
+      <!-- LEFT: Steps + Channels -->
+      <div>
+        <div class="gold-line"></div>
+        <div class="section-tag">How to Apply</div>
+        <h2 class="section-title" style="font-size:36px;">Your Application<br>Journey Starts Here</h2>
+        <p style="font-size:15px;color:var(--text-mid);line-height:1.7;margin-bottom:8px;">We've made applying as simple as possible. Use any of the three channels below — whichever is easiest for you.</p>
+
+        <div class="apply-steps">
+          <div class="apply-step">
+            <div class="apply-step-n">1</div>
+            <div>
+              <div class="apply-step-title">Submit Your Application</div>
+              <div class="apply-step-text">Use our Google Form, WhatsApp, or email to send your basic details and passport status.</div>
+            </div>
+          </div>
+          <div class="apply-step">
+            <div class="apply-step-n">2</div>
+            <div>
+              <div class="apply-step-title">Initial Screening Call</div>
+              <div class="apply-step-text">Our team contacts you within 48 hours to verify eligibility and explain next steps.</div>
+            </div>
+          </div>
+          <div class="apply-step">
+            <div class="apply-step-n">3</div>
+            <div>
+              <div class="apply-step-title">Document Collection</div>
+              <div class="apply-step-text">Submit your passport copy, CV, and photo via WhatsApp or in person at our office.</div>
+            </div>
+          </div>
+          <div class="apply-step">
+            <div class="apply-step-n">4</div>
+            <div>
+              <div class="apply-step-title">Interview Scheduling</div>
+              <div class="apply-step-text">We match you to an employer and schedule your interview. Caregiver interviews: every Wednesday.</div>
+            </div>
+          </div>
+          <div class="apply-step">
+            <div class="apply-step-n">5</div>
+            <div>
+              <div class="apply-step-title">Placement &amp; Departure</div>
+              <div class="apply-step-text">Upon passing your interview, we handle visa, travel, and pre-departure orientation.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-tag" style="margin-top:8px;">Apply Via</div>
+        <div style="background:#FEF3C7;border:1px solid #F5A623;border-radius:8px;padding:16px 18px;margin-bottom:16px;display:flex;align-items:flex-start;gap:10px;">
+          <span style="font-size:18px;flex-shrink:0;">💰</span>
+          <p style="font-size:13px;color:#1a1a2e;line-height:1.65;margin:0;"><strong>Fee Transparency:</strong> We charge a processing and relocation support fee <em>only after</em> successful shortlisting and employer selection. Only shortlisted candidates will be contacted. Visa facilitation is <strong>FREE</strong> for workers placed directly through our agency.</p>
+        </div>
+        <div class="apply-channels">
+          <a class="channel-card" href="https://docs.google.com/forms/d/e/1FAIpQLScBuCPhvaK8D_wUflJCp8KJmXf-v6wCMW3ldsvlbX_izLwEaQ/viewform" target="_blank">
+            <div class="channel-icon ch-form">📋</div>
+            <div>
+              <div class="channel-title">Online Application Form</div>
+              <div class="channel-detail">Fill out our structured Google Form — takes 3–5 minutes</div>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a class="channel-card" href="https://wa.me/254700000000?text=Hello%20Vornyx%20Global,%20I%20would%20like%20to%20apply%20for%20overseas%20employment." target="_blank">
+            <div class="channel-icon ch-wa">💬</div>
+            <div>
+              <div class="channel-title">WhatsApp Application</div>
+              <div class="channel-detail">Send us a message at +254 700 000 000 with your name &amp; passport status</div>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a class="channel-card" href="mailto:info@vornyx.co.ke?subject=Job Application — Vornyx Global">
+            <div class="channel-icon ch-email">✉️</div>
+            <div>
+              <div class="channel-title">Email Application</div>
+              <div class="channel-detail">Send your name, phone, job interest, and passport status to info@vornyx.co.ke</div>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Embedded Google Form -->
+      <div>
+        <div class="form-embed-wrap">
+          <div class="form-embed-header">
+            <span class="form-embed-header-icon">📋</span>
+            <div>
+              <div class="form-embed-header-title">Vornyx Global — Job Application</div>
+              <div class="form-embed-header-sub">Apply for UAE &amp; Gulf Opportunities · Only shortlisted candidates will be contacted</div>
+            </div>
+          </div>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScBuCPhvaK8D_wUflJCp8KJmXf-v6wCMW3ldsvlbX_izLwEaQ/viewform?embedded=true"
+            width="100%"
+            height="720"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Vornyx Global Job Application Form">
+            Loading application form…
+          </iframe>
+        </div>
+        <p style="font-size:12px;color:var(--text-light);text-align:center;margin-top:12px;">
+          Can't see the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLScBuCPhvaK8D_wUflJCp8KJmXf-v6wCMW3ldsvlbX_izLwEaQ/viewform" target="_blank" style="color:var(--gold);">Open it directly →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="contact-hero">
+    <div class="gold-line center"></div>
+    <div class="section-tag">Get in Touch</div>
+    <h1 class="section-title" style="color:#fff;">We're Here to Help</h1>
+  </div>
+
+  <section class="section">
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="cc-icon">📱</div>
+        <div class="cc-title">WhatsApp / Call</div>
+        <div class="cc-val">+254 700 000 000</div>
+        <div class="cc-sub">Mon–Fri 8am–5pm. Fastest response via WhatsApp.</div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">📧</div>
+        <div class="cc-title">Email</div>
+        <div class="cc-val">info@vornyx.co.ke</div>
+        <div class="cc-sub">We respond within 24 business hours.</div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">📍</div>
+        <div class="cc-title">Office</div>
+        <div class="cc-val">Nairobi, Kenya</div>
+        <div class="cc-sub">Walk-ins welcome. Appointments preferred.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script>
+// Logo injection
+const LOGO_B64 = 'img/logo_navbar.png';
+document.querySelectorAll('img[src="vornyx_global_logo_updated.png"]').forEach(img=>{
+  img.src=LOGO_B64;
+});
+
+// Page navigation
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a=>{
+    a.classList.remove('active');
+  });
+  const el=document.getElementById('nav-'+name);
+  if(el) el.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// Mobile menu
+function toggleMenu(){
+  document.getElementById('mob-menu').classList.toggle('open');
+}
+function closeMenu(){
+  document.getElementById('mob-menu').classList.remove('open');
+}
+
+// Job filter
+function filterJobs(filter,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.jobs-full-grid .job-card').forEach(card=>{
+    if(filter==='all') card.style.display='block';
+    else if(filter==='urgent') card.style.display=card.dataset.urgent==='true'?'block':'none';
+    else card.style.display=card.dataset.country===filter?'block':'none';
+  });
+}
+
+// Scroll animations
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}
+  });
+},{threshold:0.1});
+function initAnims(){
+  document.querySelectorAll('.why-point,.trust-card,.hiw-step,.job-card,.testi-card,.val-card,.dest-tile,.contact-card').forEach(el=>{
+    el.style.opacity='0';el.style.transform='translateY(24px)';
+    el.style.transition='opacity .5s ease, transform .5s ease';
+    io.observe(el);
+  });
+}
+window.addEventListener('load',initAnims);
+document.querySelectorAll('.page').forEach(p=>{
+  new MutationObserver(()=>initAnims()).observe(p,{attributes:true,attributeFilter:['class']});
+});
+</script>
+</body>
+</html>
